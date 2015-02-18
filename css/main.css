@@ -1,0 +1,399 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background-color: rgb(237,237,237);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Header stylings */
+
+header {
+    margin-top: 50px;
+    width: 100%;
+    padding: 25px 0;
+    background-color: rgb(71,71,71);
+    overflow: auto;   
+    border-bottom: 3px solid black; 
+}
+
+header > div.subtitle {
+    margin-left: 95px;
+    width: 800px;
+    float: left;
+}
+
+header > div.subtitle > h4, 
+header > div.data-center-count > h4 {
+    font-size: 1.8em;
+    margin: 0;
+    color: rgb(155,155,155);
+    float: left;
+}
+
+header > div.subtitle > h4 {
+    line-height: 1em;
+}
+
+header > div.data-center-count {
+    position: absolute;
+    width: auto;
+    padding: 25px 30px;
+    top: 40px;
+    left: 950px;
+    background-color: rgb(48,77,157);
+    border-bottom: 3px solid black;
+}
+
+header > div.data-center-count > i, 
+header > div.data-center-count > h2 {
+    margin: 0;
+    color: rgb(255,255,255);
+    float: left;
+}
+
+header > div.data-center-count > h2 {
+    font-size: 3.5em;
+    padding: 0 0 0 15px;
+}
+
+header > div.data-center-count > h4 {
+    padding: 10px 0 0 15px;
+    width: 100px;
+    line-height: 1em;
+}
+
+/* Services tab stylings */
+
+.four-service-list {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1280px;
+    overflow: auto;
+    margin: 60px auto 20px auto;
+}
+
+.service {
+    width: 250px;
+    overflow: auto;
+    padding: 20px 25px;
+    margin: 0 10px;
+    float: left;
+    text-align: center;
+}
+
+.service > hr {
+    width: 50%;
+    border: 0;
+    padding: 0;
+    margin: 25px auto 0 auto;
+    background-color: #95a5a6;
+}
+
+.service-header,
+.service-subheader,
+.service-description,
+.service-read-link {
+    width: 100%;
+    display: table;
+}
+
+.service-header {
+    height: 80px;    
+}
+
+.service-subheader {
+    height: 45px;
+}
+
+.service-description {
+    height: 180px;
+}
+
+.service-read-link {
+    height: 50px;
+}
+
+.service-header > h2, 
+.service-subheader > h3,
+.service-description > p,
+.service-read-link > a {
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.service-header > h2, 
+.service-subheader > h3,
+.service-read-link > a {
+    color: #34495e;
+}
+
+.service-header > h2 {
+    font-size: 2.5em;
+}
+
+.service-subheader > h3 {
+    font-size: 1em;
+}
+
+.service-read-link > a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.service-read-link > a:hover {
+    text-decoration: underline;
+}
+
+.service > i.fa {
+    color: #2980b9;
+}
+
+/* Resources & tools footer */
+
+.six-resources-tools {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(198,198,198);
+    padding: 15px 10px;
+}
+
+.six-resources-tools > h3 {
+    color: #95a5a6;
+    font-size: 2em;
+    display: inline;
+    padding: 0 10px;
+}
+
+.six-resources-tools > ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.six-resources-tools > ul > li {
+    display: inline;
+}
+
+.six-resources-tools > ul > li > a {
+    color: #95a5a6;
+    padding: 10px;
+}
+
+.six-resources-tools > ul > li > a:hover {
+    color: #34495e;
+}
+
+#triangle-topleft {
+    position: fixed;
+    bottom: 0;
+    left: 365px;
+    width: 0;
+    height: 0;
+    border-top: 63px solid rgb(198,198,198);
+    border-right: 63px solid transparent;
+}
+
+.six-resources-tools-under {
+    width: 100%;
+    height: 63px;
+    bottom: 0;
+}
+
+.ui-tooltip {
+    font-size: 1em;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 4px solid black;
+    color: #34495E;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
