@@ -263,21 +263,115 @@ header > div.data-center-count > h4 {
     bottom: 0;
 }
 
-.ui-tooltip {
-    font-size: 1em;
-    box-shadow: none;
-    border-radius: 0;
-    border: 0;
-    border-bottom: 4px solid black;
-    color: #34495E;
-}
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media (max-width: 1360px) {
+    header {
+        margin-top: 0px;
+        padding: 0;
 
+    }
+    
+    header > div.subtitle > h4 {
+        padding-top: 30px;
+    }
+
+    header > div.subtitle {
+        margin-left: 30px;
+    }
+
+    header > div.data-center-count {
+        position: relative;
+        width: auto;
+        float: right;
+        top: 0;
+        left: 0;
+        padding: 25px 30px;
+        background-color: rgb(48,77,157);
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 1240px) {
+    
+    header {
+        text-align: center;
+        height: auto;
+    }
+    header > div.data-center-count {
+        visibility: hidden;
+        position: absolute;
+        z-index: -10;
+    }
+    
+    header > div.subtitle {
+        width: 100%;
+        margin: 0;
+    }
+
+    header > div.subtitle > h4 {
+        float: none;
+        padding-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .four-service-list {
+        width: 100%;
+    }
+
+    .service {
+        margin: 0;
+    }
+    .six-resources-tools {
+        width: 100%;
+        text-align: center;
+        border-top: 3px solid #6C7A89;
+        margin: 0;
+        padding: 15px 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .six-resources-tools > ul > li > a {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .four-service-list {
+        margin: 15px 0 0 0;
+        padding: 0;
+    }
+    .service {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .service-description,
+    .service-description > p,
+    .service-subheader,
+    .service > hr {
+        display: none !important;
+        visibility: hidden;
+        position: absolute;
+        height: 0;
+        width: 0
+        z-index: -10;
+    }
+}
+
+@media (max-width: 675px) {
+    .service {
+        width: 100%;
+    }
+    .four-service-list {
+        margin-bottom: 10vh;
+    }
 }
 
 @media print,
